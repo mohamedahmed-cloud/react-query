@@ -12,12 +12,12 @@ export default function RQSpecificHero () {
         return <h2>Loading...</h2>;
       }
       if (isError ) {
-        return <h1>{error.message}</h1>;
+        return <h1>error - {error.message}</h1>;
       }
 
     return (
         <div>
-            {data && data.map((hero) => {
+            {Array.isArray(data) && data.map((hero) => {
                 return (
                 <div key={hero.id}>{hero.name} - {hero.alterEgo}</div>)
             })}
