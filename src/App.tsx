@@ -4,6 +4,8 @@ import Home from './components/Home.page';
 import RQSuperHeroesPage from './components/RQSuperHeros.page';
 import SuperHeroesPage from './components/SuperHeros.page';
 import Root from './routes/root';
+import RQSpecificHero from './components/RQSpecificHero';
+import ParallelQuery from './components/ParreleQuery';
 function App() {
   return (
     <BrowserRouter>
@@ -12,6 +14,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/super-heroes" element={<SuperHeroesPage />} />
         <Route path="/rq-super-heroes" element={<RQSuperHeroesPage />} />
+        <Route path="/rq-super-heroes/:id" element={<RQSpecificHero />} />
+        <Route path="/parallel-query" element={<ParallelQuery />} />
       </Routes>
     </BrowserRouter>
   );

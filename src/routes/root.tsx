@@ -15,6 +15,9 @@ export default function Root() {
             <li>  
               <Link to="/rq-super-heroes">RQ SuperHeroes</Link>
             </li>
+            <li>  
+              <Link to="/parallel-query">Parallel Query</Link>
+            </li>
           </ul>
         </nav>
   );
