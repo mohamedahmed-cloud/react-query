@@ -10,13 +10,16 @@ export default function Root() {
               <Link to="/home">Home Page</Link>
             </li>
             <li>
-              <Link to="/super-heroes">Super Heroes</Link>
+              <Link to="/super-heroes">Su.Heroes</Link>
             </li>
             <li>  
-              <Link to="/rq-super-heroes">RQ SuperHeroes</Link>
+              <Link to="/rq-super-heroes">RQ Su.Heroes</Link>
             </li>
             <li>  
-              <Link to="/parallel-query">Parallel Query</Link>
+              <Link to="/parallel-query">Pa.Query</Link>
+            </li>
+            <li>  
+              <Link to="/dy-query">dyn. Query</Link>
             </li>
           </ul>
         </nav>

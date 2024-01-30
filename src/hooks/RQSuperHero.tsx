@@ -10,4 +10,7 @@ export default function useRQSuperHeroSpecific(){
           const response = await axios.get("http://localhost:4000/superheroes");
           return response.data
         },
+        select: (data) => {
+            return data
+        } 
 })}

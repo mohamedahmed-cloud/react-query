@@ -24,20 +24,23 @@ export default function SuperHeroesPage() {
   if (isError ) {
     return <h1>{error.message}</h1>;
   }
+
   return (
     <>
       <h2>Super Heroes Page</h2>
-      {/* {JSON.stringify(data)} */}
+      {JSON.stringify(data)}
       {/* <button onClick={refetch}>Refetch Data</button> */}
 
       {/* {data?.map((hero) => {
         return <div key={hero.name}>{hero && hero.name}</div>;
       })} */}
-      {data?.map((hero) => {
+
+      {Array.isArray(data)  && data?.map((hero) => {
         return (
           <div>
-            <Link to={`/rq-super-heroes/${hero.id}`}>{hero.name}</Link>
-          </div>          )
+            <Link to={`${hero.id}`}>{hero.name}</Link>
+          </div>          
+          )
       })}
     </>
   );
