@@ -15,7 +15,7 @@ export default function DependentQuery({userEmail}) {
         queryFn: () => fetchFunction(`http://localhost:4000/channels/${channelId}`),
         enabled: !!channelId,
     })
-    console.log(courses)
+    // console.log(courses)
 
     return (
         <div>
