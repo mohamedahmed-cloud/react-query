@@ -27,6 +27,9 @@ export default function Root() {
             <li>  
               <Link to="/paginate">pagination</Link>
             </li>
+            <li>  
+              <Link to="/infinite-query">infinite-query</Link>
+            </li>
           </ul>
         </nav>
   );

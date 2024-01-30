@@ -7,7 +7,7 @@ export default function PaginationQuery() {
     const {data, error, isError, isLoading, isFetching} = useQuery({
         queryKey: ['pagination', pageNumber],
         queryFn: async() => {
-            const response = await axios.get(`http://localhost:4000/colors?_limit=2&_page=${pageNumber}`)
+            const response = await axios.get(`https://jsonplaceholder.typicode.com/todos?_limit=2&_page=${pageNumber}`)
             return response.data
         },
         
@@ -22,9 +22,9 @@ export default function PaginationQuery() {
             <div>
                 {/* {JSON.stringify(data)} */}
                 {Array.isArray(data) && 
-                data.map((color ,indx) => (
+                data.map((todo ,indx) => (
                     <p key={indx}> 
-                        {indx + 1} - {color.label}
+                        {todo.id} - {todo.title} - {}
                     </p>
                 ))}
             </div>

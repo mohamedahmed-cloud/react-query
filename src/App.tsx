@@ -9,6 +9,7 @@ import ParallelQuery from './components/ParreleQuery';
 import DynamicQuery from './components/dynamicQueries';
 import DependentQuery from './components/DependentQuery';
 import PaginationQuery from './components/Pagination';
+import InfiniteQuery from './components/InfiniteQuery';
 function App() {
   return (
     <BrowserRouter>
@@ -22,6 +23,7 @@ function App() {
         <Route path="/dy-query" element={<DynamicQuery queryIds={[1,3] }/>} />
         <Route path="/denpend-query" element={<DependentQuery userEmail="vishwas@example.com"/>} />
         <Route path="/paginate" element={<PaginationQuery />} />
+        <Route path="/infinite-query" element={<InfiniteQuery />} />
       </Routes>
     </BrowserRouter>
   );
