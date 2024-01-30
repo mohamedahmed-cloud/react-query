@@ -7,6 +7,7 @@ import Root from './routes/root';
 import RQSpecificHero from './components/RQSpecificHero';
 import ParallelQuery from './components/ParreleQuery';
 import DynamicQuery from './components/dynamicQueries';
+import DependentQuery from './components/DependentQuery';
 function App() {
   return (
     <BrowserRouter>
@@ -18,6 +19,7 @@ function App() {
         <Route path="/rq-super-heroes/:id" element={<RQSpecificHero />} />
         <Route path="/parallel-query" element={<ParallelQuery />} />
         <Route path="/dy-query" element={<DynamicQuery queryIds={[1,3] }/>} />
+        <Route path="/denpend-query" element={<DependentQuery userEmail="vishwas@example.com"/>} />
       </Routes>
     </BrowserRouter>
   );

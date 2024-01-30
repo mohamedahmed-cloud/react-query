@@ -21,6 +21,9 @@ export default function Root() {
             <li>  
               <Link to="/dy-query">dyn. Query</Link>
             </li>
+            <li>  
+              <Link to="/denpend-query">dyn. Query</Link>
+            </li>
           </ul>
         </nav>
   );
