@@ -2,7 +2,7 @@ import { useInfiniteQuery } from "@tanstack/react-query"
 import axios from "axios"
 
 const fetchColors = async ({ pageParam = 1 }) => {
-    const response = await axios.get(`https://jsonplaceholder.typicode.com/todos?_limit=2&_page=${pageParam}`);
+    const response = await axios.get(`https://jsonplaceholder.typicode.com/todos?_limit=10&_page=${pageParam}`);
     return response.data;
   };
 

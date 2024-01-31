@@ -10,6 +10,7 @@ import DynamicQuery from './components/dynamicQueries';
 import DependentQuery from './components/DependentQuery';
 import PaginationQuery from './components/Pagination';
 import InfiniteQuery from './components/InfiniteQuery';
+import ObserverInfiniteQuery from './components/ObserverInfiniteQuery';
 function App() {
   return (
     <BrowserRouter>
@@ -24,6 +25,7 @@ function App() {
         <Route path="/denpend-query" element={<DependentQuery userEmail="vishwas@example.com"/>} />
         <Route path="/paginate" element={<PaginationQuery />} />
         <Route path="/infinite-query" element={<InfiniteQuery />} />
+        <Route path="/observer-infinite-query" element={<ObserverInfiniteQuery />} />
       </Routes>
     </BrowserRouter>
   );

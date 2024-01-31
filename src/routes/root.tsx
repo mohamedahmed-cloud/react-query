@@ -30,6 +30,9 @@ export default function Root() {
             <li>  
               <Link to="/infinite-query">infinite-query</Link>
             </li>
+            <li>  
+              <Link to="/observer-infinite-query">Obse infinite query</Link>
+            </li>
           </ul>
         </nav>
   );
